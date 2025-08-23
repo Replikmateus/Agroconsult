@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("../img/logo.jpg");
+  background-image: url("logo.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -329,3 +329,4 @@ select {
     margin-top: -100px;
   }
 }
+
