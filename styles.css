@@ -3,10 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-image: url("../img/logo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 main {
   width: 100%;
   height: 100%;
 }
+
 header {
   width: 100%;
   height: 505x;
@@ -17,25 +25,31 @@ header {
   left: 0;
   z-index: 100;
 }
+
 .contenedor {
   width: 98%;
   margin: auto;
 }
+
 #nav-bar {
   display: none;
 }
+
 header label {
   float: right;
   font-size: 28px;
   margin: 6px 0;
   cursor: pointer;
 }
+
 h1 {
   float: left;
 }
+
 header .contenedor {
   display: table;
 }
+
 .menu {
   position: absolute;
   width: 100%;
@@ -46,14 +60,17 @@ header .contenedor {
   transition: all 0.5s;
   transform: translateX(-100%);
 }
-#nav-bar:checked ~ .menu {
+
+#nav-bar:checked~.menu {
   transform: translateX(0%);
 }
+
 .lista-menu li {
   display: inline;
   padding-left: 3px;
   padding-right: 3px;
 }
+
 .lista-menu li a {
   display: block;
   color: #000000;
@@ -62,9 +79,11 @@ header .contenedor {
   padding: 15px;
   font-size: 20px;
 }
+
 .lista-menu li a:hover {
   background: #007720;
 }
+
 section {
   width: 100%;
   margin-bottom: 25px;
@@ -75,20 +94,24 @@ section {
   position: relative;
   width: 100vw;
 }
+
 #banner img {
   width: 100%;
   height: 100%;
 }
+
 #banner .contenedor {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  color: orange;
+  color: rgb(255, 255, 255);
 }
+
 #banner h2 {
   font-size: 25px;
 }
+
 #banner a {
   display: block;
   width: 100px;
@@ -98,12 +121,15 @@ section {
   margin-top: 10px;
   border: 3px solid #fff;
 }
+
 #banner p {
   font-size: large;
 }
+
 #banner a:hover {
   background: rgba(51, 51, 51, 0.8);
 }
+
 #bienvenidos {
   text-align: center;
   font-size: 50px;
@@ -114,19 +140,23 @@ section {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 #blog article {
   margin: 15px;
 }
+
 #blog img {
   width: 100%;
   max-width: 280px;
   border-radius: 15px;
   position: relative;
 }
+
 #blog img:hover {
   width: 98%;
   opacity: 95%;
 }
+
 #blog h3,
 h4 {
   text-align: center;
@@ -138,30 +168,36 @@ h4 {
   text-align: center;
   padding: 20px;
 }
+
 #info .contenedor {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .info-pet {
   margin: 20px;
 }
+
 .info-pet img {
   width: 180px;
   height: 180px;
   border-radius: 50%;
   border: 7px solid #fff;
 }
+
 footer .contenedor {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 25px;
+  background-color: white;
 }
 
 .copy {
   font-size: 20px;
 }
+
 .sociales {
   width: 100%;
   text-align: center;
@@ -172,31 +208,38 @@ footer .contenedor {
   color: #333;
   text-decoration: none;
 }
+
 .center {
   text-align: center;
 }
+
 .inputactivo {
   background-color: green;
   border: solid 2px rgb(3, 255, 3);
 }
+
 #form-2 {
   position: absolute;
   right: 47%;
   left: 46%;
 }
+
 .form-1 input,
 select {
   padding: 5px;
 }
+
 .form-1 label p,
 input,
 select {
   margin: 5px;
 }
+
 .form-1 p {
   font-size: 20px;
   font-family: "Cooper Black";
 }
+
 .notificacion {
   background-color: green;
   padding: 20px;
@@ -208,10 +251,12 @@ select {
   font-family: "Cooper Black";
   display: none;
 }
+
 .inputerror {
   background-color: red;
   border: solid 3px salmon;
 }
+
 #Terminar {
   padding: 20px;
   font-size: x-large;
@@ -219,6 +264,7 @@ select {
   border-radius: 20px;
   box-shadow: 5px 5px;
 }
+
 #Terminar:hover {
   color: white;
   background-color: #54a5ad;
@@ -226,7 +272,7 @@ select {
 
 
 
-.MascotasImg{
+.MascotasImg {
   width: 400px;
   height: 400px;
 }
@@ -243,6 +289,7 @@ select {
     float: right;
     display: flex;
   }
+
   header label {
     display: none;
   }
@@ -251,26 +298,32 @@ select {
     display: flex;
     flex-wrap: wrap;
   }
+
   .contenedor {
     width: 1000px;
   }
+
   #banner img {
     margin-top: -450px !important;
   }
 }
+
 @media (min-width: 480px) {
   #banner h2 {
     font-size: 50px;
   }
+
   #banner a {
     margin-top: 25px;
   }
 }
+
 @media (min-width: 768px) {
   #banner {
     height: 300px;
     overflow: hidden;
   }
+
   #banner img {
     height: auto;
     margin-top: -100px;
